@@ -1,0 +1,36 @@
+JSON
+{
+  "system": "orbit_house_v1",
+  "tempo": 113,
+  "grid": 32,
+
+  "log_system": {
+    "sub_log": {
+      "role": "anchor",
+      "hits": [1, 9, 17, 25]
+    },
+
+    "rhythm_log": {
+      "role": "groove_engine",
+      "hits": [1, 4, 7, 9, 12, 15, 17, 20, 23, 25, 28, 31]
+    },
+
+    "accent_log": {
+      "role": "variation",
+      "hits": [15, 16, 31, 32]
+    }
+  },
+
+  "rhythmic_identity": {
+    "base_feel": "3_3_2_tresillo",
+    "swing": 0.58,
+    "cycle": "2_bar_32_step"
+  },
+
+  "taal_modes": {
+    "amapiano": "32_step_native",
+    "teentaal": "16_beat_symmetry",
+    "jhaptal": "10_beat_asymmetry",
+    "misra_chapu": "7_beat_fluid"
+  }
+}
