@@ -1,0 +1,89 @@
+🎼 Orbit House V1 — Generative Rhythm MIDI System
+🧭 Overview
+Orbit House V1 is a generative rhythm architecture system that produces MIDI patterns based on phase-based grid cycles and layered percussion logic.
+Instead of traditional beat-making, this system uses structured time cycles to generate rhythm through interaction between independent layers.
+The result is not a fixed song — but a repeatable rhythm engine that outputs evolving grooves.
+🧠 Core Concept
+The system is built on the idea that rhythm can be generated using independent step cycles that interact over time.
+Orbit House uses three primary cycle lengths:
+8-step cycle → Anchor layer (stability)
+10-step cycle → Groove layer (movement)
+11-step cycle → Drift layer (variation / tension)
+These cycles do not align perfectly, creating phase-based polyrhythmic movement.
+🥁 Layer Architecture
+1. Sub Log (Anchor Layer)
+Provides rhythmic foundation
+Typically mapped to kick / sub elements
+Maintains structural stability
+2. Rhythm Log (Groove Layer)
+Drives groove movement
+Often mapped to log drum / bass percussion
+Adds syncopation and flow
+3. Accent Log (Texture Layer)
+Adds rhythmic variation and detail
+High-frequency percussion (hats, clicks, accents)
+Creates movement on top of groove
+4. Fill Log (Optional Layer)
+Used for transitions and variation
+Not always active
+Introduces rhythmic change events
+🔁 System Behaviour
+Orbit House V1 operates as a phase interaction system:
+Each layer runs independently
+No forced alignment between cycles
+Groove emerges from time displacement
+Repetition evolves through phase drift, not pattern change
+⚙️ Repository Structure
+
+/midi/
+    percussion_orbit.mid
+
+/data/
+    core_pattern.json
+
+/generator/
+    midi_generator.py (or equivalent script)
+
+/docs/
+    orbit_house_v1_architecture.md
+
+README.md
+🧪 core_pattern.json (Concept)
+The JSON file defines the structural logic of the system:
+Step cycles (8 / 10 / 11)
+Layer definitions
+Trigger rules per log layer
+Pattern mapping instructions
+This file acts as the source of truth for rhythm generation.
+🎹 MIDI Generator
+The generator script converts the JSON structure into MIDI:
+Reads cycle definitions
+Assigns notes per layer
+Outputs standard MIDI file format
+Designed for DAWs (BandLab, FL Studio, Ableton, etc.)
+🎧 How to Use
+Clone the repository
+Open percussion_orbit.mid in any DAW
+Assign instruments:
+Sub Log → Kick / 808 / sub bass
+Rhythm Log → Log drum / bass percussion
+Accent Log → Hats / percussion FX
+Listen to phase interaction between cycles
+🔥 Key Idea
+Orbit House is not a loop-based system.
+It is a:
+phase-based generative rhythm engine
+Groove is created through interaction, not repetition.
+🚀 Future Direction (V2 Concept)
+Planned expansions may include:
+Probability-based triggering
+Swing / micro-timing drift
+Humanisation layers
+Multi-pattern generation
+Real-time MIDI evolution engine
+📌 Notes
+This system is designed for experimentation and rhythm design
+It is not tied to any single genre, but is compatible with Amapiano-style log drum structures
+All outputs are deterministic based on input configuration
+🧠 Summary
+Orbit House V1 transforms rhythm into a structured generative system where musical groove emerges from interacting time cycles rather than fixed loops.
